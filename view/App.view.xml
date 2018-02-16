@@ -1,0 +1,10 @@
+<mvc:View
+		controllerName="sap.ui.MyCalendar.controller.App"
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:u="sap.ui.unified">
+			<u:Calendar
+					id="calendar"
+					intervalSelection="true"
+					months="12" />
+</mvc:View>
