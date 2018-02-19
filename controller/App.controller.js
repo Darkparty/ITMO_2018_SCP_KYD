@@ -27,7 +27,7 @@ sap.ui.define([
 							new sap.ui.unified.DateTypeRange({
   							startDate : new Date(2018, oXMLModel.getProperty("/days/day/" + i + "/@d").substring(0,2)-1,
  							oXMLModel.getProperty("/days/day/" + i +"/@d").substring(3 ,5)),
- 							type   : sap.ui.unified.CalendarDayType.Type01,
+ 							type   : sap.ui.unified.CalendarDayType.Type06,
  		 					tooltip   : holidays[oXMLModel.getProperty("/days/day/" + i +"/@h")]
  			 				})
  			 			);
@@ -41,9 +41,23 @@ sap.ui.define([
  		 					})
  			 			);
 						}
+
+						if (oXMLModel.getProperty("/days/day/" + i + "/@t") == 2){
+						oCalendar.addSpecialDate(
+							new sap.ui.unified.DateTypeRange({
+  							startDate : new Date(2018, oXMLModel.getProperty("/days/day/" + i + "/@d").substring(0,2)-1,
+ 							oXMLModel.getProperty("/days/day/" + i +"/@d").substring(3 ,5)),
+ 							type   : sap.ui.unified.CalendarDayType.Type20,
+ 							tooltip : "Рабочий и сокращенный."
+ 		 					})
+ 			 			);
+						}
 					}		
 				}
 			} catch(e){}
 		}
 	});
 });
+
+
+

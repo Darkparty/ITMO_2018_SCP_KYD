@@ -1,0 +1,11 @@
+.sapUiCalItemWeekEnd> .sapUiCalItemText {
+    background-color: #8fefd7;
+}
+
+.sapUiCalItemType06>.sapUiCalItemText {
+    background-color: #008bc7;
+}
+
+.sapUiCalItemType20>.sapUiCalItemText {
+    background-color: #f2f2f2;
+}

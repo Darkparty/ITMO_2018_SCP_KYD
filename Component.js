@@ -5,6 +5,7 @@ sap.ui.define([
 	return UIComponent.extend("sap.ui.MyCalendar.Component", {
 		metadata : {
 			rootView : "sap.ui.MyCalendar.view.App",
+			includes: ["../css/style.css"]
 		}
 	});
 });
